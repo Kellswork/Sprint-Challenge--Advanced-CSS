@@ -170,11 +170,20 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  opacity: 0.8;
 }
 .navbar h1 {
   font-size: 2em;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+@media (max-width: 900px) {
+  .navbar {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .navbar {
@@ -189,6 +198,11 @@ p {
   align-items: flex-start;
   padding-bottom: 1rem;
 }
+@media (max-width: 900px) {
+  .nav-links {
+    width: 80%;
+  }
+}
 @media (max-width: 500px) {
   .nav-links {
     width: 100%;
@@ -199,6 +213,10 @@ p {
   font-size: 0.8em;
   text-decoration: none;
   color: #454A59;
+}
+.nav-links a:hover {
+  color: #001e58;
+  transition: ease-in-out 300ms;
 }
 footer {
   color: #22283B;

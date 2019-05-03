@@ -6,11 +6,18 @@
   margin-top: 2rem;
   background: @nav-bg;
   .display-flex(column, center, center);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  opacity: 0.8;
 
   h1 {
     font-size: 2em;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+  @media @nav {
+    width: 100%;
   }
   @media @phone {
     width: 100%;
@@ -20,6 +27,9 @@
   width: 40%;
   .display-flex(row, space-evenly);
   padding-bottom: 1rem;
+  @media @nav {
+    width: 80%;
+  }
   @media @phone {
     width: 100%;
   }
@@ -29,5 +39,9 @@
     font-size: 0.8em;
     text-decoration: none;
     color: @nav-font;
+    &:hover {
+      color: #001e58;
+      transition: ease-in-out 300ms;
+    }
   }
 }
