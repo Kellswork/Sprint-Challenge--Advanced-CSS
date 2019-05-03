@@ -5,3 +5,13 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.button(@background, @text-color) {
+    background: @background;
+    width: 30%;
+    height: 33px;
+    font-size: 1.7em;
+    color: @text-color;
+    border-radius: @border-radius;
+    .display-flex(@justify:center, @align:center);
+}
