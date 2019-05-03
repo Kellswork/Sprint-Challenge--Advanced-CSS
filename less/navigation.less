@@ -1,1 +1,27 @@
 // Navigation code here
+.navbar {
+  font-size: 2rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background: @nav-bg;
+  .display-flex(column, center, center);
+
+  h1 {
+    font-size: 2em;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+.nav-links {
+  width: 40%;
+  .display-flex(row, space-evenly);
+  padding-bottom: 1rem;
+
+  a {
+    text-transform: capitalize;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: @nav-font;
+  }
+}
